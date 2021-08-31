@@ -1,5 +1,8 @@
 .buy__wrapper {
 }
+option {
+    background-color: var(--first-brand-color);
+}
 .buy__header-wrapper {
     background-color: var();
 }
