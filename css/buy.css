@@ -242,6 +242,11 @@ sup {
     font-size: 1.8rem;
     font-family: var(--title-font);
 }
+.bold span {
+    text-transform: uppercase;
+    font-size: inherit;
+    font-family: inherit;
+}
 .rules {
     font-size: 1.6rem;
 }
