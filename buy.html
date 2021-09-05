@@ -13,7 +13,7 @@
     <div class="main__wrapper">
         <div class="header__wrapper buy__header-wrapper">
             <header class="header">
-                <a href="./index.html" class="logo">Health Body</a>
+                <a href="./index.html" class="logo js_website-name"></a>
                 <button class="menu__btn js_menu__btn">
                     <span></span>
                 </button>
@@ -42,53 +42,56 @@
 
             </header>
         </div>
-<div class="buy__wrapper">
-<div class="container">
-        <section class="buy">
-            <h1 class="title">Health Body</h1>
-            <div class="buy__flex">
-                <img src="./img/img1.png" class="buy__img" />
-                <div class="buy__text-block">
-                    <h2 class="buy__title"><span style="display: inline-block" class="js_price">$19.99 - $119.00</span>
-                        <span style="margin-bottom: 0;" class="buy__title buy__title--cross js_original"></span>
-                    </h2>
-                    <h2 class="buy__title buy__title-accent js_save"></h2>
-                    <div id="quantity" class="quantity">
-                        <label class="quantity_label">Quantity:
-                            <div class="quantity_label-box">
-                                <div class="quantity_label-btn quantity_label-prev js_quantity_prev">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-                                        xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path
-                                                    d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z" />
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <input type="number" min="0" size="3" maxlength="3" class="quantity__input js_quantity"
-                                    value="0" data-line-id="1" max="10">
-                                <div class="quantity_label-btn quantity_label-next js_quantity_next">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-                                        xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path
-                                                    d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216
+        <div class="buy__wrapper">
+            <div class="container">
+                <section class="buy">
+                    <h1 class="title js_website-name"></h1>
+                    <div class="buy__flex">
+                        <img src="./img/img1.png" class="buy__img" />
+                        <div class="buy__text-block">
+                            <h2 class="buy__title"><span style="display: inline-block" class="js_price">$19.99 -
+                                    $119.00</span>
+                                <span style="margin-bottom: 0;" class="buy__title buy__title--cross js_original"></span>
+                            </h2>
+                            <h2 class="buy__title buy__title-accent js_save"></h2>
+                            <div id="quantity" class="quantity">
+                                <label class="quantity_label">Quantity:
+                                    <div class="quantity_label-box">
+                                        <div class="quantity_label-btn quantity_label-prev js_quantity_prev">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                xml:space="preserve">
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <input type="number" min="0" size="3" maxlength="3"
+                                            class="quantity__input js_quantity" value="0" data-line-id="1" max="10">
+                                        <div class="quantity_label-btn quantity_label-next js_quantity_next">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                xml:space="preserve">
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216
 			                                    v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z" />
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </label>
                             </div>
-                        </label>
+                            <p class="error-message js_error-message">Buy More and Save! Limited to 12 Only</p>
+                        </div>
                     </div>
-                    <p class="error-message js_error-message">Buy More and Save! Limited to 12 Only</p>
-                </div>
-            </div>
                     <div class="main-form__wrapper">
                         <div class="form__wrapper ">
                             <div class="form">
@@ -98,15 +101,18 @@
                                     <h3 class="form__subtitle">Additional goods</h3>
                                     <div class="case-block">
                                         <div class="checkbox__label-wrap">
-                                          <div>
-                                            <input class="checkbox js_additional" type="checkbox" id="additional__checkbox" />
-                                            <label class="checkbox__label" for="additional__checkbox"><span class="bold">Silicone case</span></label>
-                                          </div>
-                                          <div class="label-block">
-                                            <span class="bold">$5.95</span>
-                                          </div>
+                                            <div>
+                                                <input class="checkbox js_additional" type="checkbox"
+                                                    id="additional__checkbox" />
+                                                <label class="checkbox__label" for="additional__checkbox"><span
+                                                        class="bold js_website-add"></span></label>
+                                            </div>
+                                            <div class="label-block">
+                                                <span class="bold">$5.95</span>
+                                            </div>
                                         </div>
-                                        <img src="./img/travel-pack.png" alt="silicone case" class="silicone_case_img" />
+                                        <img src="./img/travel-pack.png" alt="silicone case"
+                                            class="silicone_case_img" />
                                     </div>
                                 </div>
                             </div>
@@ -313,16 +319,16 @@
                                     <p class="bold">Amount</p>
                                 </div>
                                 <div class="label-block total js_total">
-                                    <span id="chosen" class="bold"> 
+                                    <span id="chosen" class="bold">
                                         <span class="js_bottom-quantity"></span>
-                                        <span class="js_bottom-name"></span>
+                                        <span class="js_website-name"></span>
                                     </span>
                                     <span id="chosen_price" class="bold">$0.00</span>
 
                                 </div>
                                 <div id="silicone_case" class="form-pd">
                                     <div class="label-block">
-                                        <span class="bold">Exceeding Body Goal - Travel Pack</span>
+                                        <span class="bold js_website-add"></span>
                                         <span class="bold">$5.95</span>
                                     </div>
                                 </div>
@@ -344,16 +350,16 @@
                                                 <a class="policy__link" href="./policy.html">Privacy Policy</a>, which
                                                 explain that you will be
                                                 charged <span id="terms_price">$0.00</span><span id="express_terms"> +
-                                                    $5.95 Exceeding Body Goal - Travel Pack </span> = <span id="total_2"> $0.00 </span><span id="handling">
+                                                    $5.95 <span class="js_website-add"></span> </span> = <span
+                                                    id="total_2"> $0.00 </span><span id="handling">
                                                     (No
                                                     Shipping and
                                                     handling costs)</span>. To cancel your order, please call our
                                                 Customer
-                                                Service toll free number at 844 403 1134 or email us at
-                                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                    data-cfemail="abd8dedbdbc4d9dfebc5cedcdfcec8c3dbd9c4d8c6cad9dfdccadfc8c3cdcad8c3c2c4c585c8c4c685">[email&#160;protected]</a>
+                                                Service toll free number at <a href="" class="policy__link js_website-phone"></a> or email us at
+                                                <a href="" class="policy__link js_website-email"></a>
                                                 You will see a charge from
-                                                newtechprosmartwatchfa
+                                               <span class="js_website-desc"></span>
                                                 on your bank statement. Our Customer Service department reserves the
                                                 right
                                                 to offer promo codes for varied price points.
@@ -369,55 +375,55 @@
 
                         </form>
                     </div>
-        </section>
-</div>
-</div>
-<div class="footer__wrapper ">
-    <div class="container">
-        <footer class="footer">
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <ul class="footer__sublist">
-                        <li class="footer__subitem">
-                            <h4 class="footer__title">Company</h4>
+                </section>
+            </div>
+        </div>
+        <div class="footer__wrapper ">
+            <div class="container">
+                <footer class="footer">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <ul class="footer__sublist">
+                                <li class="footer__subitem">
+                                    <h4 class="footer__title">Company</h4>
+                                </li>
+                                <li class="footer__subitem">
+                                    <p class="text footer__text">© 2021 All rights reserved.</p>
+                                </li>
+                                <li class="footer__subitem">
+                                    <p class="text footer__text js_website-corp"></p>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="footer__subitem">
-                            <p class="text footer__text">© 2021 New Tech Pro Smart Health Body Benefit Fashion</p>
-                        </li>
-                        <li class="footer__subitem">
-                            <p class="text footer__text">Sadik Media Grp Inc</p>
+                        <li class="footer__item">
+                            <ul class="footer__sublist">
+                                <li class="footer__subitem">
+                                    <h4 class="footer__title">Contact us</h4>
+                                </li>
+                                <li class="footer__subitem footer__icon-box">
+                                   
+                                        <img src="./img/placeholder.svg" alt="" class="footer__icon">
+                                        <span class="text footer__text js_website-address"></span>
+                                </li>
+                                <li class="footer__subitem footer__icon-box">
+                                   
+                                        <img src="./img/telephone.svg" alt="" class="footer__icon">
+                                        <a href="" class="text footer__link js_website-phone"></a>
+                                </li>
+                                <li class="footer__subitem footer__icon-box">
+                                   
+                                        <img src="./img/email.svg" alt="" class="footer__icon">
+                                        <a href="" class="text footer__link js_website-email"></a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                </li>
-                <li class="footer__item">
-                    <ul class="footer__sublist">
-                        <li class="footer__subitem">
-                            <h4 class="footer__title">Contact us</h4>
-                        </li>
-                        <li class="footer__subitem">
-                            <span class="text footer__text footer__icon-box">
-                                <img src="./img/placeholder.svg" alt="" class="footer__icon">
-                                6-05 Saddle River Rd. #154, Fair Lawn, NJ 07410, USA</span>
-                        </li>
-                        <li class="footer__subitem">
-                            <a href="tel:844 403 1134" class="text footer__link footer__icon-box">
-                                <img src="./img/telephone.svg" alt="" class="footer__icon">
-                                <span>844 403 1134</span></a>
-                        </li>
-                        <li class="footer__subitem">
-                            <a href="mailto:support@healthbodyfashion.com"
-                                class="text footer__link footer__icon-box">
-                                <img src="./img/email.svg" alt="" class="footer__icon">
-                                <span>support@healthbodyfashion.com</span></a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <a href="./index.html" class="footer__logo-link">Health Body</a>
-        </footer>
+                    <a href="./index.html" class="footer__logo-link js_website-name"></a>
+                </footer>
+            </div>
+        </div>
     </div>
-</div>
-    </div>
+    <script src="./js/website-data.js"></script>
     <script src="./js/form/quantity.js"></script>
     <script src="./js/menu.js"></script>
 </body>

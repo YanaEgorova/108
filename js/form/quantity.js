@@ -19,11 +19,9 @@ const prevQuantityBtn = document.querySelector('.js_quantity_prev');
 const nextQuantityBtn = document.querySelector('.js_quantity_next');
 
 const bottomQuantity = document.querySelector('.js_bottom-quantity');
-const bottomName = document.querySelector('.js_bottom-name');
 const defaultText = topPriceParagraph.textContent;
 
-const PRODUCT_NAME_SINGULAR = 'bottle of Muscle Suplements';
-const PRODUCT_NAME_PLURAL = 'bottles of Muscle Suplements';
+
 
 const amountOfProduct = 12;
 const additionalProductPrice = 5.95;
@@ -96,10 +94,10 @@ function chackedAdditionalInput(e) {
         totalBlock.style.display = 'flex';
         terms.style.display = 'flex';
         submitBtn.style.display = 'block';
-        headphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        total.textContent = `$ ${((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100}`;
-        bottomTotalPrice.textContent = `$ ${((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100}`;
+        headphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        total.textContent = `$ ${(((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100).toFixed(2)}`;
+        bottomTotalPrice.textContent = `$ ${(((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100).toFixed(2)}`;
         bottomAdditionalPrice.style.display = 'inline-block';
     } else if(!checked && quantity > 0 && quantity <= amountOfProduct) {
         bottomHeadphonesPrice.style.display = 'inline-block';
@@ -109,10 +107,10 @@ function chackedAdditionalInput(e) {
         totalBlock.style.display = 'flex';
         terms.style.display = 'flex';
         submitBtn.style.display = 'block';
-        headphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        total.textContent = `$ ${priceAmount(quantity)}`;
-        bottomTotalPrice.textContent = `$ ${priceAmount(quantity)}`;
+        headphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        total.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        bottomTotalPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
         bottomAdditionalPrice.style.display = 'none';
     }
 }
@@ -122,19 +120,11 @@ function changeQuantity(e) {
     if(e.target) {
         quantity = Number(e.target.value);
         bottomQuantity.textContent = Number(e.target.value);
-        if(Number(e.target.value) === 1) {
-            bottomName.textContent = PRODUCT_NAME_SINGULAR;
-        } else {
-            bottomName.textContent = PRODUCT_NAME_PLURAL;
-        }
+     
     } else {
         quantity = Number(e);
         bottomQuantity.textContent = Number(e);
-        if(Number(e) === 1) {
-            bottomName.textContent = PRODUCT_NAME_SINGULAR;
-        } else {
-            bottomName.textContent = PRODUCT_NAME_PLURAL;
-        }
+      
     }
     enterMoreThanThereIs(quantity);
     setTopTitle(quantity);
@@ -150,10 +140,10 @@ function showBottomBlocks(quantity) {
         totalBlock.style.display = 'flex';
         terms.style.display = 'flex';
         submitBtn.style.display = 'block';
-        headphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        total.textContent = `$ ${((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100}`;
-        bottomTotalPrice.textContent = `$ ${((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100}`;
+        headphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        total.textContent = `$ ${(((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100).toFixed(2)}`;
+        bottomTotalPrice.textContent = `$ ${(((additionalProductPrice * 100) + (priceAmount(quantity) * 100)) / 100).toFixed(2)}`;
         bottomAdditionalPrice.style.display = 'inline-block';
     } else if(!additionalInput.checked && quantity > 0 && quantity <= amountOfProduct) {
         bottomHeadphonesPrice.style.display = 'inline-block';
@@ -162,10 +152,10 @@ function showBottomBlocks(quantity) {
         totalBlock.style.display = 'flex';
         terms.style.display = 'flex';
         submitBtn.style.display = 'block';
-        headphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity)}`;
-        total.textContent = `$ ${priceAmount(quantity)}`;
-        bottomTotalPrice.textContent = `$ ${priceAmount(quantity)}`;
+        headphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        bottomHeadphonesPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        total.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
+        bottomTotalPrice.textContent = `$ ${priceAmount(quantity).toFixed(2)}`;
         bottomAdditionalPrice.style.display = 'none';
     } else if(additionalInput.checked && quantity === 0) {
         bottomHeadphonesPrice.style.display = 'none';
